@@ -1,0 +1,16 @@
+PODS:
+  - SimpleTwoWayBinding (0.0.2)
+
+DEPENDENCIES:
+  - SimpleTwoWayBinding
+
+SPEC REPOS:
+  trunk:
+    - SimpleTwoWayBinding
+
+SPEC CHECKSUMS:
+  SimpleTwoWayBinding: 728d751c25d9909ddf2ee76711ab4a8a71e00c69
+
+PODFILE CHECKSUM: eb389d9aca54b799e71cb4078bdcdafe370961b2
+
+COCOAPODS: 1.10.1
