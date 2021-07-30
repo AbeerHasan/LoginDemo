@@ -26,25 +26,14 @@ class ViewController: UIViewController {
         passwordTextField.bind(with: loginViewModel.password)
         
         emailErrorLabel.observe(for: loginViewModel.email) {  [unowned self](_) in
-            let error = self.loginViewModel.validateEmail()
-            if error == "" {
-                self.emailErrorLabel.isHidden = true
-                self.emailErrorLabel.text = ""
-            }else {
-                self.emailErrorLabel.text = error
-                self.emailErrorLabel.isHidden = false
-            }
+            self.emailErrorLabel.text = self.loginViewModel.validateEmail()
+            self.emailErrorLabel.isHidden = !self.loginViewModel.emailErrorIsExist
+           
         }
-        
+
         passwordErrorLabel.observe(for: loginViewModel.password) {  [unowned self](_) in
-            let error = self.loginViewModel.validatePassword()
-            if error == "" {
-                self.passwordErrorLabel.isHidden = true
-                self.passwordErrorLabel.text = ""
-            }else {
-                self.passwordErrorLabel.text = error
-                self.passwordErrorLabel.isHidden = false
-            }
+            self.passwordErrorLabel.text = self.loginViewModel.validatePassword()
+            self.passwordErrorLabel.isHidden = !self.loginViewModel.passwordErrorIsExist
         }
     }
     

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C705D4426B4651700B5110B /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C705D4326B4651700B5110B /* Validation.swift */; };
+		1C705D4726B4665200B5110B /* RegaxEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C705D4626B4665200B5110B /* RegaxEnum.swift */; };
 		1C70939E26B1B96700280485 /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C70939D26B1B96700280485 /* HomeViewController.storyboard */; };
 		1C7093A026B1BA1F00280485 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C70939F26B1BA1F00280485 /* HomeViewController.swift */; };
 		1C7093A226B1C24900280485 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7093A126B1C24900280485 /* DataService.swift */; };
@@ -26,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C705D4326B4651700B5110B /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		1C705D4626B4665200B5110B /* RegaxEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegaxEnum.swift; sourceTree = "<group>"; };
 		1C70939D26B1B96700280485 /* HomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
 		1C70939F26B1BA1F00280485 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1C7093A126B1C24900280485 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
@@ -60,6 +64,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C705D4226B464FC00B5110B /* Validation */ = {
+			isa = PBXGroup;
+			children = (
+				1C705D4326B4651700B5110B /* Validation.swift */,
+			);
+			path = Validation;
+			sourceTree = "<group>";
+		};
+		1C705D4526B4663000B5110B /* Enumerations */ = {
+			isa = PBXGroup;
+			children = (
+				1C705D4626B4665200B5110B /* RegaxEnum.swift */,
+			);
+			path = Enumerations;
+			sourceTree = "<group>";
+		};
 		1C70939A26B1B78E00280485 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +133,7 @@
 		1CE0A12526AF956E00FF1864 /* LoginDemoWithMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				1C705D4526B4663000B5110B /* Enumerations */,
 				1C7093A326B1DCC600280485 /* Services */,
 				1CE0A14426AFA1A400FF1864 /* Extensions */,
 				1CE0A14126AF99F000FF1864 /* Home */,
@@ -130,6 +151,7 @@
 		1CE0A13D26AF961D00FF1864 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				1C705D4226B464FC00B5110B /* Validation */,
 				1CE0A13F26AF973500FF1864 /* Model */,
 				1CE0A14026AF973F00FF1864 /* ViewModel */,
 				1CE0A13E26AF972800FF1864 /* View */,
@@ -313,6 +335,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C705D4726B4665200B5110B /* RegaxEnum.swift in Sources */,
 				1C7093A226B1C24900280485 /* DataService.swift in Sources */,
 				1CE0A12B26AF956E00FF1864 /* ViewController.swift in Sources */,
 				1CE0A14826AFBBEC00FF1864 /* LoginModel.swift in Sources */,
@@ -323,6 +346,7 @@
 				1CE0A14326AFA18F00FF1864 /* UIViewExtension.swift in Sources */,
 				1CE0A14626AFBBCD00FF1864 /* LoginViewMdel.swift in Sources */,
 				1C7093A726B1E7C100280485 /* UIViewControllerExtension.swift in Sources */,
+				1C705D4426B4651700B5110B /* Validation.swift in Sources */,
 				1CE0A12926AF956E00FF1864 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
